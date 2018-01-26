@@ -1,0 +1,1547 @@
+fileFormatVersion: 2
+guid: c2953f24df644b84c97b39e20ecb9880
+timeCreated: 1516911140
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_0
+    21300002: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_1
+    21300004: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_2
+    21300006: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_3
+    21300008: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_4
+    21300010: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_5
+    21300012: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_6
+    21300014: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_7
+    21300016: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_8
+    21300018: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_9
+    21300020: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_10
+    21300022: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_11
+    21300024: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_12
+    21300026: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_13
+    21300028: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_14
+    21300030: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_15
+    21300032: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_16
+    21300034: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_17
+    21300036: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_18
+    21300038: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_19
+    21300040: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_20
+    21300042: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_21
+    21300044: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_22
+    21300046: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_23
+    21300048: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_24
+    21300050: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_25
+    21300052: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_26
+    21300054: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_27
+    21300056: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_28
+    21300058: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_29
+    21300060: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_30
+    21300062: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_31
+    21300064: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_32
+    21300066: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_33
+    21300068: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_34
+    21300070: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_35
+    21300072: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_36
+    21300074: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_37
+    21300076: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_38
+    21300078: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_39
+    21300080: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_40
+    21300082: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_41
+    21300084: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_42
+    21300086: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_43
+    21300088: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_44
+    21300090: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_45
+    21300092: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_46
+    21300094: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_47
+    21300096: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_48
+    21300098: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_49
+    21300100: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_50
+    21300102: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_51
+    21300104: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_52
+    21300106: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_53
+    21300108: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_54
+    21300110: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_55
+    21300112: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_56
+    21300114: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_57
+    21300116: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_58
+    21300118: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_59
+    21300120: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_60
+    21300122: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_61
+    21300124: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_62
+    21300126: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_63
+    21300128: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_64
+    21300130: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_65
+    21300132: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_66
+    21300134: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_67
+    21300136: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_68
+    21300138: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_69
+    21300140: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_70
+    21300142: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_71
+    21300144: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_72
+    21300146: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_73
+    21300148: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_74
+    21300150: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_75
+    21300152: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_76
+    21300154: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_77
+    21300156: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_78
+    21300158: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_79
+    21300160: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_80
+    21300162: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_81
+    21300164: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_82
+    21300166: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_83
+    21300168: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_84
+    21300170: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_85
+    21300172: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_86
+    21300174: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_87
+    21300176: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_88
+    21300178: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_89
+    21300180: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_90
+    21300182: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_91
+    21300184: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_92
+    21300186: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_93
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 217
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 217
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_2
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 217
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_3
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 217
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_4
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 216
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_5
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 217
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_6
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 216
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_7
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 216
+        width: 25
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_8
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 217
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_9
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 216
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_10
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 217
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_11
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 216
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_12
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 216
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_13
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 216
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_14
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 217
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_15
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 217
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_16
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 217
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_17
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 216
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_18
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 216
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_19
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 216
+        width: 22
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_20
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 217
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_21
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 217
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_22
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 217
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_23
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 218
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_24
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 217
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_25
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 217
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_26
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 171
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_27
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 173
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_28
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 172
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_29
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 172
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_30
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 171
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_31
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 172
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_32
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 168
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_33
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 172
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_34
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 172
+        width: 13
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_35
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 172
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_36
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 172
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_37
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 171
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_38
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 172
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_39
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 172
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_40
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 172
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_41
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 172
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_42
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 172
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_43
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 172
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_44
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 171
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_45
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 172
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_46
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 172
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_47
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 172
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_48
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 172
+        width: 36
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_49
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 173
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_50
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 173
+        width: 28
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_51
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 172
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_52
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 127
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_53
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 127
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_54
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 127
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_55
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 128
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_56
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 128
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_57
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 128
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_58
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 128
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_59
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 127
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_60
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 127
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_61
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 128
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_62
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 124
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_63
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 128
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_64
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 128
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_65
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 128
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_66
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 136
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_67
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 137
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_68
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 127
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_69
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 144
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_70
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 144
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_71
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 127
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_72
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 123
+        width: 20
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_73
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 123
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_74
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 122
+        width: 20
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_75
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 128
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_76
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 124
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_77
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 126
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_78
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 76
+        width: 20
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_79
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 79
+        width: 13
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_80
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 103
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_81
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 83
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_82
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 83
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_83
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 80
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_84
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 99
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_85
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 88
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_86
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 87
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_87
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 97
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_88
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 81
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_89
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 83
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_90
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 83
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_91
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 80
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_92
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 80
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteFont_FeastofFleshBB_Bold_(36)_[0,0,0]_38x45_93
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 82
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
