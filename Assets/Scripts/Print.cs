@@ -7,7 +7,7 @@ public class Print : MonoBehaviour
     public Sprite[] imgs;
     public int Indrx = 0;
 
-    void ChandeImgs()
+    void ChangeImgs()
     {
         if(imgs.Length > Indrx)
         {
@@ -17,11 +17,11 @@ public class Print : MonoBehaviour
 
     private void Start()
     {
-        ChandeImgs();
+        ChangeImgs();
     }
 
     private void Update()
     {
-        ChandeImgs();
+        ChangeImgs();
     }
 }
