@@ -10,9 +10,7 @@ public class Print : MonoBehaviour
     void ChangeImgs()
     {
         if(imgs.Length > Indrx)
-        {
             GetComponent <SpriteRenderer>().sprite = imgs[Indrx];
-        }
     }
 
     private void Start()

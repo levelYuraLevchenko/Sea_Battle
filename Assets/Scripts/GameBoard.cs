@@ -59,32 +59,32 @@ public class GameBoard : MonoBehaviour
         }
     }
 
-    // ДОПИЛИТЬ!!!
+    // Функция контроля правил расстановки кораблей. 
     bool TestEnterDeck(int X, int Y)
     {
+        // Если точка прверки за границами поля то сразу false.
         if((X > -1) && (Y > -1) && (X < 10) && (Y < 10))
         {
             int[] arrX = new int[9];
             int[] arrY = new int[9];
+            // Разчитываю провераемые координаты.
+            arrX[0] = X + 1;  /*|*/   arrX[1] = X;      /*|*/   arrX[2] = X - 1;  
+            arrY[0] = Y + 1;  /*|*/   arrY[1] = Y + 1;  /*|*/   arrY[2] = Y + 1;
 
-            arrX[0] = X + 1;  /*|*/   arrX[0] = X;      /*|*/   arrX[0] = X - 1;  
-            arrY[0] = Y + 1;  /*|*/   arrY[0] = Y + 1;  /*|*/   arrY[0] = Y + 1;
+            arrX[3] = X + 1;  /*|*/   arrX[4] = X;      /*|*/   arrX[5] = X - 1;
+            arrY[3] = Y;      /*|*/   arrY[4] = Y;      /*|*/   arrY[5] = Y;
 
-            arrX[0] = X + 1;  /*|*/   arrX[0] = X;      /*|*/   arrX[0] = X - 1;
-            arrY[0] = Y;      /*|*/   arrY[0] = Y;      /*|*/   arrY[0] = Y;
+            arrX[6] = X + 1;  /*|*/   arrX[7] = X;      /*|*/   arrX[8] = X - 1;
+            arrY[6] = Y - 1;  /*|*/   arrY[7] = Y - 1;  /*|*/   arrY[8] = Y - 1;
 
-            arrX[0] = X + 1;  /*|*/   arrX[0] = X;      /*|*/   arrX[0] = X - 1;
-            arrY[0] = Y - 1;  /*|*/   arrY[0] = Y - 1;  /*|*/   arrY[0] = Y - 1;
-
-            // Сомотим что вокруг поля.
-            for(int I = 0; I < 9; I++)
-            {
+            // Сомотрю что вокруг поля.
+            for(int i = 0; i < 9; i++)
                 // Проверяю существует ли координата.
-                if((arrX[I] > -1) && (arrY[I] > -1) && (arrX[I] < 10) && (arrY[I] < 10))
-                {
-                    if(_slots[arrX[I], arrY[I]].GetComponent<Print>().Indrx != 0) return false;
-                }
-            }
+                if((arrX[i] > -1) && (arrY[i] > -1) && (arrX[i] < 10) && (arrY[i] < 10))
+                    // Если несуществует возвращаем false.
+                    if(_slots[arrX[i], arrY[i]].GetComponent<Print>().Indrx != 0)
+                        return false;
+            // Если не в одной точку не появилось помехи возвращаю true.
             return true;
         }
         return false;
@@ -103,8 +103,6 @@ public class GameBoard : MonoBehaviour
     public void WhoClick(int X, int Y)
     {
         if(TestEnterDeck(X,Y))
-        {
-            _slots[X, Y].GetComponent<Print>().Indrx = 1;
-        }    
+            _slots[X, Y].GetComponent<Print>().Indrx = 1;   
     }
 }

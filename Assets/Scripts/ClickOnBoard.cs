@@ -10,8 +10,6 @@ public class ClickOnBoard : MonoBehaviour
     private void OnMouseDown()
     {
         if(WhoParent != null)
-        {
             WhoParent.GetComponent<GameBoard>().WhoClick(coordinateX, coordinateY);
-        }
     }
 }
