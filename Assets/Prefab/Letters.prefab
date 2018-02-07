@@ -21,10 +21,8 @@ GameObject:
   - component: {fileID: 4962571360617278}
   - component: {fileID: 212202882818636886}
   - component: {fileID: 114600706639218536}
-  - component: {fileID: 114660015586662586}
-  - component: {fileID: 65958766131485662}
   m_Layer: 0
-  m_Name: Slots
+  m_Name: Letters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,18 +41,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &65958766131485662
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1391887062955900}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114600706639218536
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -67,25 +53,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imgs:
-  - {fileID: 21300000, guid: 88881072827b9a54d9a6bb043b4a337a, type: 3}
-  - {fileID: 21300000, guid: 65ed9b9f7f7fb8545ae549358be96821, type: 3}
-  - {fileID: 21300000, guid: 0ec28804446f80c419593469802293b4, type: 3}
-  - {fileID: 21300000, guid: 3ce5ba0c34344e64dbfee3f824bdbd98, type: 3}
-  Indrx: 0
---- !u!114 &114660015586662586
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1391887062955900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b085f505ff7d30641a71572892f197fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  WhoParent: {fileID: 0}
-  coordinateX: 0
-  coordinateY: 0
+  - {fileID: 21300000, guid: c2953f24df644b84c97b39e20ecb9880, type: 3}
+  - {fileID: 21300002, guid: c2953f24df644b84c97b39e20ecb9880, type: 3}
+  - {fileID: 21300004, guid: c2953f24df644b84c97b39e20ecb9880, type: 3}
+  - {fileID: 21300006, guid: c2953f24df644b84c97b39e20ecb9880, type: 3}
+  - {fileID: 21300008, guid: c2953f24df644b84c97b39e20ecb9880, type: 3}
+  - {fileID: 21300010, guid: c2953f24df644b84c97b39e20ecb9880, type: 3}
+  - {fileID: 21300012, guid: c2953f24df644b84c97b39e20ecb9880, type: 3}
+  - {fileID: 21300014, guid: c2953f24df644b84c97b39e20ecb9880, type: 3}
+  - {fileID: 21300016, guid: c2953f24df644b84c97b39e20ecb9880, type: 3}
+  - {fileID: 21300018, guid: c2953f24df644b84c97b39e20ecb9880, type: 3}
+  Index: 0
 --- !u!212 &212202882818636886
 SpriteRenderer:
   m_ObjectHideFlags: 1
