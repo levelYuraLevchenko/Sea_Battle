@@ -16,9 +16,16 @@ public class GameBoard : MonoBehaviour
     // Размер поля (10 на 10).
     private int _lengBoard = 10;
 
+    // Количество кораблей на поле.
+    public int[] shipCount = { 0, 4, 3, 2, 1 };
+
+    List<Ship> listShip = new List<Ship>();
+
     void Start()
     {
         CreateBoard();
+
+        EnterRandomShip();
     }
 
     void Update()
@@ -29,6 +36,11 @@ public class GameBoard : MonoBehaviour
     struct TestCoord
     {
         public int X, Y;
+    }
+
+    struct Ship
+    {
+        public TestCoord[] shipCoord;
     }
 
     // Вывод координатных линий и игрового поля.
@@ -89,6 +101,7 @@ public class GameBoard : MonoBehaviour
         {
             int[] arrX = new int[9];
             int[] arrY = new int[9];
+
             // Разчитываю провераемые координаты.
             arrX[0] = X + 1;  /*|*/   arrX[1] = X;      /*|*/   arrX[2] = X - 1;  
             arrY[0] = Y + 1;  /*|*/   arrY[1] = Y + 1;  /*|*/   arrY[2] = Y + 1;
@@ -206,15 +219,95 @@ public class GameBoard : MonoBehaviour
         // Если получилось поместить корабль то ставлю его.
         if(shipCoord != null)
         {
-            foreach(TestCoord T in shipCoord)
+            foreach(TestCoord type in shipCoord)
             {
-                _slots[T.X, T.Y].GetComponent<Print>().Index = 1;
+                _slots[type.X, type.Y].GetComponent<Print>().Index = 1;
             }
-            // Gставили корабль.
+
+            Ship deck;
+
+            // Сохранение кординат корабля.
+            deck.shipCoord = shipCoord;
+
+            // Сохранение корабля в список.
+            listShip.Add(deck);
+
+            // Поставил корабль.
             return true;
         }
         // Не смогли поставить корабль.
         return false;
+    }
+
+    private bool CountShips()
+    {
+        // Переменная для подсчета кораблей.
+        int Amount = 0;
+
+        // Суммирует все значения.
+        foreach(var Ship in shipCount)
+        {
+            Amount += Ship;
+        }
+
+        // Если сумма не ноль значит не все корабли на поле.
+        if(Amount != 0)
+        {
+            return true;
+        }
+        // Если сумма 0 значит все корабли на поле.
+        return false;
+    }
+
+    // Метод очистки поля.
+    private void ClearBoard()
+    {
+        // Возвращаю все корабли в ангар.
+        shipCount = new int[] { 0, 4, 3, 2, 1 };
+        // Очищаю список кораблей.
+        listShip.Clear();
+
+        for (var i = 0; i < _lengBoard; i++)
+        {
+            for (var j = 0; j < _lengBoard; j++)
+            {
+                _slots[i, j].GetComponent<Print>().Index = 0;
+            }
+        }
+    }
+
+    // Рандомная расстановка кораблей.
+    private void EnterRandomShip()
+    {
+        ClearBoard();
+
+        // Номер выбранного корабля.
+        int selectShip = 4;
+
+        // Координаты по которым будет выставлен корабль.
+        int X, Y;
+        // Положение корабля на поле ( вертикально или горизонтально).
+        int direction;
+
+        while(CountShips())
+        {
+            X = Random.Range(0, 10);
+            Y = Random.Range(0, 10);
+            // Получает направление: 0 горизонтально, 1 вертикально.
+            direction = Random.Range(0, 2);
+
+            if(EnterDeck(selectShip, direction, X, Y))
+            {
+                // Если получилось установить то уменьшаем количество кораблей.
+                shipCount[selectShip]--;
+                // Если закончились корабли данного типа то выбирает следующий.
+                if(shipCount[selectShip] == 0)
+                {
+                    // Смещает на следующую группу кораблей.
+                    selectShip--;
+                }
+            }
+        }
     }
 
     // Слот на который кликнули будеть сообщать об этом.
@@ -223,7 +316,86 @@ public class GameBoard : MonoBehaviour
         //if(TestEnterDeck(X,Y))
         //    _slots[X, Y].GetComponent<Print>().Index = 1;
 
-        EnterDeck(4, 1, X, Y);
+        //EnterDeck(4, 1, X, Y);
         //EnterDeck(4, 0, X, Y);
+
+        //EnterRandomShip();
+
+        Shoot(X, Y);
+    }
+
+    // Выстрел.
+    private bool Shoot(int X, int Y)
+    {
+        // Получаю индекс спрайта слота.
+        int selectSlot = _slots[X, Y].GetComponent<Print>().Index;
+
+        bool result = false;
+
+        switch(selectSlot)
+        {
+            // Промах.
+            case 0:
+                _slots[X, Y].GetComponent<Print>().Index = 2;
+                break;
+            // Попадание.
+            case 1:
+                _slots[X, Y].GetComponent<Print>().Index = 3;
+
+                if(TestShoot(X, Y))
+                {
+                    // убил.
+                }
+                else
+                {
+                    // ранил.
+                }
+                break;
+        }
+        return result;
+    }
+
+    // Проверка попадания по кораблю.
+    private bool TestShoot(int X, int Y)
+    {
+        bool result = false;
+
+        // Перебирает корабли и смотрит в какой из них произошло попадание.
+        foreach(Ship test in listShip)
+        {
+            // Перебирает палубы корабля и проверяет попали ли в нее.
+            foreach(TestCoord deck in test.shipCoord)
+            {
+                // Сравнивает координаты выстрела с координатами палубы.
+                if((deck.X == X) && (deck.Y == Y))
+                {
+                    // Переменная отвечающая за количество попаданий по кораблю.
+                    int killCount = 0;
+                    // Если игрок попал по палубе то проверяет сколько палуб разрушено в корабле.
+                    foreach(TestCoord killDeck in test.shipCoord)
+                    {
+                        // Проверяет что записано в поле по данным координатам.
+                        int testBlock = _slots[killDeck.X, killDeck.Y].GetComponent<Print>().Index;
+                        // Если записано 3 то подсчитывает ранение.
+                        if(testBlock == 3)
+                            killCount++;
+                    }
+                    // Если количество палуб равно количеству попаданий то уничтожаем корабль.
+                    if(killCount == test.shipCoord.Length)
+                    {
+                        // Если убит вернем true.
+                        return result;
+                    }
+                    // Иначе корабль еще живой и вернет false.
+                    else
+                        result = false;
+
+                    // Завершение цикла и возврат результата.
+                    return result;
+                }
+            }
+        }
+
+        return result;
     }
 }
