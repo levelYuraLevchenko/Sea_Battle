@@ -313,14 +313,6 @@ public class GameBoard : MonoBehaviour
     // Слот на который кликнули будеть сообщать об этом.
     public void WhoClick(int X, int Y)
     {
-        //if(TestEnterDeck(X,Y))
-        //    _slots[X, Y].GetComponent<Print>().Index = 1;
-
-        //EnterDeck(4, 1, X, Y);
-        //EnterDeck(4, 0, X, Y);
-
-        //EnterRandomShip();
-
         Shoot(X, Y);
     }
 
@@ -337,14 +329,16 @@ public class GameBoard : MonoBehaviour
             // Промах.
             case 0:
                 _slots[X, Y].GetComponent<Print>().Index = 2;
+                result = false;
                 break;
             // Попадание.
             case 1:
                 _slots[X, Y].GetComponent<Print>().Index = 3;
+                result = true;
 
-                if(TestShoot(X, Y))
+                if (TestShoot(X, Y))
                 {
-                    // убил.
+                    // убил.  08
                 }
                 else
                 {
@@ -397,5 +391,32 @@ public class GameBoard : MonoBehaviour
         }
 
         return result;
+    }
+
+    //09
+    // Возвращает количество живих кораблей.
+    public int LifeShip()
+    {
+        // Подчитывает количество живих кораблей.
+        int countLife = 0;
+
+        // Перебор кораблей.
+        foreach(Ship test in listShip)
+        {
+            // Перебирает палубы корабля.
+            foreach(TestCoord deck in test.shipCoord)
+            {
+                // Состояние палубы.
+                int testDeck = _slots[deck.X, deck.Y].GetComponent<Print>().Index;
+
+                // Если 1 то палуба жива.
+                if(testDeck == 1)
+                {
+                    countLife++;
+                }
+            }
+        }
+        // Вернет найденные палубы.
+        return countLife;
     }
 }
