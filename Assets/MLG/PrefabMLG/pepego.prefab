@@ -9,65 +9,61 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1479298917295254}
+  m_RootGameObject: {fileID: 1725660290582850}
   m_IsPrefabParent: 1
---- !u!1 &1479298917295254
+--- !u!1 &1725660290582850
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4440437075902062}
-  - component: {fileID: 212381685743803184}
-  - component: {fileID: 114695599933847536}
+  - component: {fileID: 4871876061338982}
+  - component: {fileID: 95096376721643300}
+  - component: {fileID: 212903531944611550}
   m_Layer: 0
-  m_Name: Board
+  m_Name: pepego
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4440437075902062
+--- !u!4 &4871876061338982
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1479298917295254}
+  m_GameObject: {fileID: 1725660290582850}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.7809763, y: 4.097327, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114695599933847536
-MonoBehaviour:
+--- !u!95 &95096376721643300
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1479298917295254}
+  m_GameObject: {fileID: 1725660290582850}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5180d9a584c379428d4f0f744dc1d0a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  number: {fileID: 1391887062955900, guid: 547ec309805d93d4586d151a9172ce43, type: 2}
-  letter: {fileID: 1391887062955900, guid: 775f5aba8cfb07b4a88c8ea93d41df55, type: 2}
-  slot: {fileID: 1391887062955900, guid: 426e1305ddde9cc4db59016ca60ba8bc, type: 2}
-  prefMLG:
-  - {fileID: 1725660290582850, guid: c362663e1e0f7d748b6526382d9de72f, type: 2}
-  - {fileID: 1470563997265462, guid: 3bdd0c36f0d3df44fab8317f44c618e0, type: 2}
-  - {fileID: 1248229317981906, guid: a590760e809c0a346b7b48167822c30b, type: 2}
-  - {fileID: 1989186860635498, guid: 6ce410305a518a14b80ae97e166e9d22, type: 2}
-  - {fileID: 0}
-  shipCount: 0000000004000000030000000200000001000000
---- !u!212 &212381685743803184
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8f58ce6b15c124542993ad972bf2e9f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!212 &212903531944611550
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1479298917295254}
+  m_GameObject: {fileID: 1725660290582850}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -101,7 +97,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.37, y: 2.26}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0

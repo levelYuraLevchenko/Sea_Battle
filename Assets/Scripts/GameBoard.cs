@@ -12,6 +12,8 @@ public class GameBoard : MonoBehaviour
     private GameObject[] _letters;
     // Игровое поле.
     private GameObject[,] _slots;
+    // Массив префабов fif.
+    public GameObject[] prefMLG;
 
     // Размер поля (10 на 10).
     private int _lengBoard = 10;
@@ -319,8 +321,8 @@ public class GameBoard : MonoBehaviour
     // Выстрел.
     private bool Shoot(int X, int Y)
     {
-        // Получаю индекс спрайта слота.
-        int selectSlot = _slots[X, Y].GetComponent<Print>().Index;
+            // Получаю индекс спрайта слота.
+            int selectSlot = _slots[X, Y].GetComponent<Print>().Index;
 
         bool result = false;
 
@@ -330,6 +332,8 @@ public class GameBoard : MonoBehaviour
             case 0:
                 _slots[X, Y].GetComponent<Print>().Index = 2;
                 result = false;
+
+                Debug.Log("Промах");
                 break;
             // Попадание.
             case 1:
@@ -338,15 +342,32 @@ public class GameBoard : MonoBehaviour
 
                 if (TestShoot(X, Y))
                 {
-                    // убил.  08
+                    if (prefMLG != null)
+                        StartCoroutine(MLGController());
+
+                    Debug.Log("Убит");
                 }
                 else
                 {
-                    // ранил.
+                    if (prefMLG != null)
+                        Instantiate(prefMLG[Random.Range(0, prefMLG.Length - 1)]);//допилить как выше!
+
+                    Debug.Log("Ранен");
                 }
                 break;
         }
         return result;
+    }
+    
+    // Вызов и удаление gif анимации.
+    IEnumerator MLGController()
+    {
+        Debug.Log("Вызвал");
+        var mlg = Instantiate(prefMLG[4]);
+        // Задержка Х секунд.
+        yield return new WaitForSeconds(2f);
+        Destroy(mlg);
+        Debug.Log("Удалил");
     }
 
     // Проверка попадания по кораблю.
@@ -378,7 +399,7 @@ public class GameBoard : MonoBehaviour
                     if(killCount == test.shipCoord.Length)
                     {
                         // Если убит вернем true.
-                        return result;
+                        result = true;
                     }
                     // Иначе корабль еще живой и вернет false.
                     else
@@ -393,7 +414,7 @@ public class GameBoard : MonoBehaviour
         return result;
     }
 
-    //09
+    //09 допилить стату своего поля!
     // Возвращает количество живих кораблей.
     public int LifeShip()
     {
@@ -401,16 +422,16 @@ public class GameBoard : MonoBehaviour
         int countLife = 0;
 
         // Перебор кораблей.
-        foreach(Ship test in listShip)
+        foreach (Ship test in listShip)
         {
             // Перебирает палубы корабля.
-            foreach(TestCoord deck in test.shipCoord)
+            foreach (TestCoord deck in test.shipCoord)
             {
                 // Состояние палубы.
                 int testDeck = _slots[deck.X, deck.Y].GetComponent<Print>().Index;
 
                 // Если 1 то палуба жива.
-                if(testDeck == 1)
+                if (testDeck == 1)
                 {
                     countLife++;
                 }
