@@ -15,6 +15,12 @@ public class GameBoard : MonoBehaviour
     // Массив префабов fif.
     public GameObject[] prefMLG;
 
+    // Координаты в диапазоне которых отображаются gif-анимации.
+    public float minX, minY, maxX, maxY;
+
+    // Прячю корабли противника.
+    public bool hideShip;
+
     // Размер поля (10 на 10).
     private int _lengBoard = 10;
 
@@ -61,12 +67,12 @@ public class GameBoard : MonoBehaviour
             _letters[i] = Instantiate(letter);
             _letters[i].transform.position = new Vector2(posX, startPosition.y);
             _letters[i].GetComponent<Print>().Index = i;
-            posX++;
+            posX+= 0.67f;
 
             _numbers[i] = Instantiate(number);
             _numbers[i].transform.position = new Vector2(startPosition.x, posY);
             _numbers[i].GetComponent<Print>().Index = i;
-            posY--;
+            posY-= 0.67f;
         }
 
         posX = startPosition.x + 1;
@@ -83,15 +89,16 @@ public class GameBoard : MonoBehaviour
                 _slots[i,j] = Instantiate(slot);
                 _slots[i,j].transform.position = new Vector2(posX, posY);
                 _slots[i,j].GetComponent<Print>().Index = 0;
+                _slots[i, j].GetComponent<Print>().hidePrint = hideShip;
 
                 _slots[i, j].GetComponent<ClickOnBoard>().WhoParent = gameObject;
                 _slots[i, j].GetComponent<ClickOnBoard>().coordinateX = i;
                 _slots[i, j].GetComponent<ClickOnBoard>().coordinateY = j;
 
-                posX++;
+                posX += 0.67f;
             }
             posX = startPosition.x + 1;
-            posY--;
+            posY -= 0.67f;
         }
     }
 
@@ -321,18 +328,19 @@ public class GameBoard : MonoBehaviour
     // Выстрел.
     private bool Shoot(int X, int Y)
     {
-            // Получаю индекс спрайта слота.
-            int selectSlot = _slots[X, Y].GetComponent<Print>().Index;
+        // Получаю индекс спрайта слота.
+        int selectSlot = _slots[X, Y].GetComponent<Print>().Index;
 
         bool result = false;
+        Music.Instance.PlaySound(0);
 
-        switch(selectSlot)
+        switch (selectSlot)
         {
             // Промах.
             case 0:
                 _slots[X, Y].GetComponent<Print>().Index = 2;
                 result = false;
-
+                //Music.Instance.PlaySound(0);
                 Debug.Log("Промах");
                 break;
             // Попадание.
@@ -343,14 +351,16 @@ public class GameBoard : MonoBehaviour
                 if (TestShoot(X, Y))
                 {
                     if (prefMLG != null)
-                        StartCoroutine(MLGController());
+                        StartCoroutine(MlgDestroyShip());
+                    StopCoroutine(MlgDestroyShip());
 
                     Debug.Log("Убит");
                 }
                 else
                 {
                     if (prefMLG != null)
-                        Instantiate(prefMLG[Random.Range(0, prefMLG.Length - 1)]);//допилить как выше!
+                        StartCoroutine(MlgHit());
+                    StopCoroutine(MlgHit());
 
                     Debug.Log("Ранен");
                 }
@@ -360,15 +370,26 @@ public class GameBoard : MonoBehaviour
     }
     
     // Вызов и удаление gif анимации.
-    IEnumerator MLGController()
+    IEnumerator MlgDestroyShip()
     {
         Debug.Log("Вызвал");
-        var mlg = Instantiate(prefMLG[4]);
+        var mlg = Instantiate(prefMLG[prefMLG.Length-1]);
         // Задержка Х секунд.
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1.2f);
         Destroy(mlg);
         Debug.Log("Удалил");
     }
+
+    IEnumerator MlgHit()
+    {
+        float xx = Random.Range(minX, maxX) + transform.position.x + 8.44f; // позиция
+        float yy = Random.Range(minY, maxY) + transform.position.y - 4.7f; // позиция
+        var mlg = Instantiate(prefMLG[Random.Range(0, prefMLG.Length - 1)], new Vector3(xx, yy, -1), transform.rotation);
+        yield return new WaitForSeconds(0.8f);
+        Destroy(mlg);
+    }
+
+
 
     // Проверка попадания по кораблю.
     private bool TestShoot(int X, int Y)
@@ -418,7 +439,7 @@ public class GameBoard : MonoBehaviour
     // Возвращает количество живих кораблей.
     public int LifeShip()
     {
-        // Подчитывает количество живих кораблей.
+        // Подчитывает количество живих палуб.
         int countLife = 0;
 
         // Перебор кораблей.
