@@ -1,22 +1,32 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.Experimental.UIElements;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
+
 
 public class MenuManager : MonoBehaviour
 {
-    public GameObject settingsPanel;
-    public GameObject muz;
+    public Camera mainCamera;
+    public GameObject settings;
+    public GameObject mainMenu;
+    public GameObject enterShipMenu;
+    public GameObject playerBoard, computerBoard;
 
-    public void PlayGame()
+    public GameObject startButton; //кнопка.
+    public GameObject startImage; //картинка.
+
+    // Main Menu.
+
+    public void Play()
     {
-        SceneManager.LoadScene(1);
+        mainCamera.orthographicSize = 4.0f;
+        mainCamera.transform.position = new Vector3(-20, 0, -10);
+     
+        // Изменения в convas.
+        mainMenu.SetActive(false);
+        enterShipMenu.SetActive(true);
     }
 
     public void Settings()
     {
-        settingsPanel.SetActive(!settingsPanel.activeSelf);
+        settings.SetActive(!settings.activeSelf);
     }
 
     public void Exit()
@@ -24,21 +34,39 @@ public class MenuManager : MonoBehaviour
         Application.Quit();
     }
 
-    private void Awake()
+    //Enter Ship Menu.
+
+    public void StartGame()
     {
-        DontDestroyOnLoad(muz);
+        mainCamera.orthographicSize = 5.0f;
+        mainCamera.transform.position = new Vector3(0, 0, -10);
+        enterShipMenu.SetActive(false);
+
+        playerBoard.GetComponent<GameBoard>().CopyBoard();
     }
 
-    public void SetSound(float value)
+    public void Arrange()
     {
-        Global.soundVolume = value;
+        // Активация кнопки "старn" после расстоковки.
+        startImage.SetActive(false);
+        startButton.SetActive(true);
+
+        // Расстановка кораблей в Enter Ship Menu.
+        playerBoard.GetComponent<GameBoard>().EnterRandomShip();
     }
 
-    public void SetMusic()
+    public void BeckOnMenu()
     {
-        //Global.musicVolume = value;
-        muz.GetComponent<AudioSource>().volume = settingsPanel.GetComponent<Slider>().value;//
+        mainCamera.orthographicSize = 5.0f;
+        mainCamera.transform.position = new Vector3(-40, 0, -10);
+
+        // Очистка поля в Enter Ship Menu.
+        playerBoard.GetComponent<GameBoard>().ClearBoard();
+
+        // Изменения в convas.
+        mainMenu.SetActive(true);
+        enterShipMenu.SetActive(false);
+        startImage.SetActive(true);
+        startButton.SetActive(false);
     }
-
-
 }

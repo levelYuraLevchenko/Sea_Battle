@@ -11,9 +11,12 @@ public class GameBoard : MonoBehaviour
     // Массив букв.
     private GameObject[] _letters;
     // Игровое поле.
-    private GameObject[,] _slots;
-    // Массив префабов fif.
+    public GameObject[,] _slots;
+    // Массив префабов gif.
     public GameObject[] prefMLG;
+    public GameObject[] prefMLGDestroy;
+
+    public GameObject mapDestination;
 
     // Координаты в диапазоне которых отображаются gif-анимации.
     public float minX, minY, maxX, maxY;
@@ -25,28 +28,24 @@ public class GameBoard : MonoBehaviour
     private int _lengBoard = 10;
 
     // Количество кораблей на поле.
-    public int[] shipCount = { 0, 4, 3, 2, 1 };
+    private int[] shipCount = { 0, 4, 3, 2, 1 };
 
-    List<Ship> listShip = new List<Ship>();
+    public List<Ship> listShip = new List<Ship>();
 
     void Start()
     {
         CreateBoard();
 
-        EnterRandomShip();
+        if(hideShip)
+            EnterRandomShip();      
     }
 
-    void Update()
-    {
-
-    }
-
-    struct TestCoord
+    public struct TestCoord
     {
         public int X, Y;
     }
 
-    struct Ship
+    public struct Ship
     {
         public TestCoord[] shipCoord;
     }
@@ -91,7 +90,9 @@ public class GameBoard : MonoBehaviour
                 _slots[i,j].GetComponent<Print>().Index = 0;
                 _slots[i, j].GetComponent<Print>().hidePrint = hideShip;
 
-                _slots[i, j].GetComponent<ClickOnBoard>().WhoParent = gameObject;
+                if(hideShip)
+                    _slots[i, j].GetComponent<ClickOnBoard>().WhoParent = gameObject;
+
                 _slots[i, j].GetComponent<ClickOnBoard>().coordinateX = i;
                 _slots[i, j].GetComponent<ClickOnBoard>().coordinateY = j;
 
@@ -225,7 +226,7 @@ public class GameBoard : MonoBehaviour
         // Получаю кординаты для установки корабля.
         TestCoord[] shipCoord = TestEnterShip(ShipType, Direction, X, Y);
 
-        // Если получилось поместить корабль то ставлю его.
+        // Если получилось поместить корабль то ставит его.
         if(shipCoord != null)
         {
             foreach(TestCoord type in shipCoord)
@@ -269,7 +270,7 @@ public class GameBoard : MonoBehaviour
     }
 
     // Метод очистки поля.
-    private void ClearBoard()
+    public void ClearBoard()
     {
         // Возвращаю все корабли в ангар.
         shipCount = new int[] { 0, 4, 3, 2, 1 };
@@ -286,7 +287,7 @@ public class GameBoard : MonoBehaviour
     }
 
     // Рандомная расстановка кораблей.
-    private void EnterRandomShip()
+    public void EnterRandomShip()
     {
         ClearBoard();
 
@@ -340,29 +341,28 @@ public class GameBoard : MonoBehaviour
             case 0:
                 _slots[X, Y].GetComponent<Print>().Index = 2;
                 result = false;
-                //Music.Instance.PlaySound(0);
-                Debug.Log("Промах");
+
                 break;
             // Попадание.
             case 1:
                 _slots[X, Y].GetComponent<Print>().Index = 3;
                 result = true;
 
+                // Убил.
                 if (TestShoot(X, Y))
                 {
-                    if (prefMLG != null)
+                    if (prefMLGDestroy != null)
                         StartCoroutine(MlgDestroyShip());
-                    StopCoroutine(MlgDestroyShip());
 
-                    Debug.Log("Убит");
+                    StopCoroutine(MlgDestroyShip());
                 }
+                // Ранил.
                 else
                 {
                     if (prefMLG != null)
                         StartCoroutine(MlgHit());
-                    StopCoroutine(MlgHit());
 
-                    Debug.Log("Ранен");
+                    StopCoroutine(MlgHit());                
                 }
                 break;
         }
@@ -372,19 +372,17 @@ public class GameBoard : MonoBehaviour
     // Вызов и удаление gif анимации.
     IEnumerator MlgDestroyShip()
     {
-        Debug.Log("Вызвал");
-        var mlg = Instantiate(prefMLG[prefMLG.Length-1]);
+        var mlg = Instantiate(prefMLGDestroy[Random.Range(0, prefMLGDestroy.Length)]);
         // Задержка Х секунд.
         yield return new WaitForSeconds(1.2f);
         Destroy(mlg);
-        Debug.Log("Удалил");
     }
 
     IEnumerator MlgHit()
     {
-        float xx = Random.Range(minX, maxX) + transform.position.x + 8.44f; // позиция
-        float yy = Random.Range(minY, maxY) + transform.position.y - 4.7f; // позиция
-        var mlg = Instantiate(prefMLG[Random.Range(0, prefMLG.Length - 1)], new Vector3(xx, yy, -1), transform.rotation);
+        float x = Random.Range(minX, maxX); //позиция.
+        float y = Random.Range(minY, maxY); //позиция.
+        var mlg = Instantiate(prefMLG[Random.Range(0, prefMLG.Length)], new Vector3(x, y, -1), transform.rotation);
         yield return new WaitForSeconds(0.8f);
         Destroy(mlg);
     }
@@ -419,6 +417,10 @@ public class GameBoard : MonoBehaviour
                     // Если количество палуб равно количеству попаданий то уничтожаем корабль.
                     if(killCount == test.shipCoord.Length)
                     {
+                        foreach (TestCoord killDeck in test.shipCoord)
+                        {
+                            _slots[killDeck.X, killDeck.Y].GetComponent<Print>().Index = 4;                          
+                        }                        
                         // Если убит вернем true.
                         result = true;
                     }
@@ -435,7 +437,6 @@ public class GameBoard : MonoBehaviour
         return result;
     }
 
-    //09 допилить стату своего поля!
     // Возвращает количество живих кораблей.
     public int LifeShip()
     {
@@ -460,5 +461,26 @@ public class GameBoard : MonoBehaviour
         }
         // Вернет найденные палубы.
         return countLife;
+    }
+
+    // Копирует поле из редактора в боевую зону.
+    public void CopyBoard()
+    {
+        if (mapDestination != null)
+        {
+            for (var i = 0; i < _lengBoard; i++)
+            {
+                for (var j = 0; j < _lengBoard; j++)
+                {
+                    // Записывает данные одного поля в другое.
+                    mapDestination.GetComponent<GameBoard>()._slots[i, j].GetComponent<Print>().Index = _slots[i, j].GetComponent<Print>().Index;
+                }
+            }
+            // Читит список.
+            mapDestination.GetComponent<GameBoard>().listShip.Clear();
+
+            // Зписывает сгенерированные корабли.
+            mapDestination.GetComponent<GameBoard>().listShip.AddRange(listShip);
+        }
     }
 }
